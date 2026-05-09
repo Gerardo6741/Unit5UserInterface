@@ -18,6 +18,8 @@ public class GameManger : MonoBehaviour
     public GameObject titleScreen;
     public TextMeshProUGUI livesText;
     private int lives;
+    public GameObject pauseScreen;
+    private bool paused;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() 
     {
@@ -74,6 +76,20 @@ public class GameManger : MonoBehaviour
         spawnRate /= difficulty;
         UpdateLives(3);
         titleScreen.gameObject.SetActive(false);
+    }
+    void ChangePaused()
+    {
+        if (!paused)
+        {
+            paused = true;
+            Time.timeScale = 0;
+        }
+        else
+        {
+                       paused = false;
+            Time.timeScale = 1;
+            pauseScreen.SetActive(false);
+        }
     }
    
 }
