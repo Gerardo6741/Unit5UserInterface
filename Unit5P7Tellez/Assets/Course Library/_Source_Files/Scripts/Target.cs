@@ -58,12 +58,12 @@ public class Target : MonoBehaviour
         }
             
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) 
     {
         Destroy(gameObject);
-        if (!gameObject.CompareTag("Bad"))
+        if (!gameObject.CompareTag("Bad") && gamemanger.isGameActive)
         {
-            gamemanger.GameOver();
+            gamemanger.UpdateLives(-1);
         }
        
             
