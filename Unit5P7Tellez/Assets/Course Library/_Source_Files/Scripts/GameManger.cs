@@ -37,10 +37,7 @@ public class GameManger : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
@@ -82,6 +79,7 @@ public class GameManger : MonoBehaviour
         if (!paused)
         {
             paused = true;
+            pauseScreen.SetActive(true);
             Time.timeScale = 0;
         }
         else
@@ -91,6 +89,12 @@ public class GameManger : MonoBehaviour
             pauseScreen.SetActive(false);
         }
     }
-   
+    void Update()
+    {         if (Input.GetKeyDown(KeyCode.P))
+        {
+            ChangePaused();
+        }
+    }
+
 }
 

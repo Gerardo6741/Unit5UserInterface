@@ -1127,7 +1127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &568141554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   restartButton: {fileID: 1447682907}
   titleScreen: {fileID: 1063929221}
   livesText: {fileID: 448309555}
-  pauseScreen: {fileID: 0}
+  pauseScreen: {fileID: 568141553}
 --- !u!4 &671363468
 Transform:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,8 @@ Transform:
   m_LocalPosition: {x: 1.1182847, y: -0.18968414, z: 0.08943759}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1659143675}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &671363469
@@ -1810,6 +1811,7 @@ RectTransform:
   - {fileID: 1123850931}
   - {fileID: 1997278878}
   - {fileID: 1983597588}
+  - {fileID: 1890631388}
   m_Father: {fileID: 1659143675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1970,7 +1972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1091099432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2814,9 +2816,8 @@ RectTransform:
   - {fileID: 1507490412}
   - {fileID: 1063929222}
   - {fileID: 1447682906}
-  - {fileID: 1890631388}
   - {fileID: 568141554}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 671363468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2941,11 +2942,11 @@ RectTransform:
   - {fileID: 182654743}
   - {fileID: 1196994374}
   - {fileID: 1914765585}
-  m_Father: {fileID: 1659143675}
+  m_Father: {fileID: 1063929222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: -89}
+  m_AnchoredPosition: {x: -90, y: -88}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890631389
@@ -3555,5 +3556,4 @@ SceneRoots:
   - {fileID: 494445612}
   - {fileID: 1611319334}
   - {fileID: 671363468}
-  - {fileID: 1659143675}
   - {fileID: 333701143}
