@@ -27,7 +27,7 @@ public class TargetX : MonoBehaviour
     }
 
     // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseDown()
+    private void OnMouseEnter()
     {
         if (gameManagerX.isGameActive)
         {
